@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find your picture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css"
+        integrity="sha512-bhYgu+LnK6ZXsq18JjhqqzZjnw4GzgCe6s34JBw09tQZ9oFC5tdSlLJW/7ZCf9EXuepe6tnQW57X8z3DKnsAGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="dist/notiflix-3.2.6.min.css" />
+        <link rel="stylesheet" href="style.css" media="(prefers-color-scheme: light)">
+        <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
+        <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"></script>
+        
+</head>
+<form class="search-form" id="search-form">
+    <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+    <button type="submit" class="submit">Search</button>
+    <!-- <div>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div>-->
+        <aside>
+            <dark-mode-toggle id="dark-mode-toggle-1" legend="Theme Switcher" appearance="switch" dark="Dark" light="Light"
+                remember="Remember this"></dark-mode-toggle>
+        </aside>
+</form>
+
+<div class="gallery">
+    <!-- Картки зображень -->
+</div>
+<div class="holder">
+    <button type="button" class="load-more is-hidden">Load more</button>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"
+        integrity="sha512-X1tKd7cMiYWKVDmFHSn+z1Y+BdrNG6Qvrhj3emg0ZOMsAuzug4ET9PmOFBgYyvcjI1hHGxhkQ1IXhOd9obYeFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="dist/notiflix-3.2.6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
